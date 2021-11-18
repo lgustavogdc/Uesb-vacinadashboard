@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1113.0" styleClass="AnchorPane" stylesheets="@../fxmlcss.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vacinadashboard.FXMLCadastrosController">
+   <children>
+      <Button layoutX="496.0" layoutY="392.0" mnemonicParsing="false" onAction="#cadastrarVacinação" text="Cadastrar" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="nameInput" layoutX="74.0" layoutY="96.0" prefHeight="25.0" prefWidth="168.0" />
+      <TextField fx:id="CPFInput" layoutX="914.0" layoutY="96.0" prefHeight="25.0" prefWidth="168.0" />
+      <TextField fx:id="ageInput" layoutX="339.0" layoutY="96.0" prefHeight="25.0" prefWidth="168.0" />
+      <TextField fx:id="vacinaInput" layoutX="638.0" layoutY="96.0" prefHeight="25.0" prefWidth="168.0" />
+      <Label layoutX="24.0" layoutY="100.0" styleClass="info" text="Nome:" />
+      <Label layoutX="864.0" layoutY="100.0" styleClass="info" text="CPF:" />
+      <Label layoutX="288.0" layoutY="100.0" styleClass="info" text="Idade:" />
+      <Label layoutX="587.0" layoutY="100.0" styleClass="info" text="Vacina:" />
+      <Label layoutX="437.0" layoutY="192.0" styleClass="info" text="Dose:" />
+      <Label layoutX="467.0" layoutY="14.0" styleClass="info" text="Cadastro de vacinação">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tipoDoseInput" layoutX="478.0" layoutY="188.0" prefHeight="25.0" prefWidth="168.0" />
+      <Label fx:id="lblStatus" layoutX="261.0" layoutY="346.0" prefHeight="27.0" prefWidth="602.0" styleClass="cadastro-situacao" textFill="#22e14c">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
